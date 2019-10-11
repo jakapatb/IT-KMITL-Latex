@@ -25,7 +25,7 @@
 % ##### Font and Typing
 \XeTeXlinebreaklocale "th_TH" %สำหรับตัดคำ
 \XeTeXlinebreakskip = 0pt plus 1pt
-\setmainfont[Scale=1.3]{Angsana New}
+\setmainfont[Scale=1]{Sarabun}
 \linespread{1.3}
 
 % ##### Set Chapter and Section Style
@@ -340,7 +340,7 @@
     \end{center}
 }
 
-\newcommand{\makeabstract}[1]{
+\newcommand{\makethabstract}[1]{
     %-- Abstract Page ------------------------------------------
     \setcounter{page}{1}
     \newpage
@@ -348,18 +348,43 @@
     
     \begin{table}[h]
         \begin{tabularx}{\linewidth}{lX}
-            \textbf{ชื่อรายงาน} & \ThesisTiTle \\
-            \textbf{ชื่อนักศึกษา} & \AuName \\
-            \textbf{รหัสนักศึกษา} & \SId \\
-            \textbf{สาขาวิชา} & เทคโนโลยีสารสนเทศ \\
-            \textbf{อาจารย์ที่ปรึกษา} & \Advisor \\
-            \textbf{ปีการศึกษา} & \AcaY
+            \textbf{ชื่อโครงงานสหกิจศึกษา } \ThesisTiTle \\
+            \textbf{ชื่อ-สกุล นักศึกษา } \AuName \\
+            \textbf{คณะ } วิศวกรรมศาสตร์ \textbf{ภาควิชา} \Depart \\
+            \textbf{ชื่อ-สกุล อาจารย์นิเทศ } \Advisor \\
+            \textbf{ชื่อ-สกุล ผู้นิเทศงาน } \Mentor \\
+            \textbf{สถานประกอบการ } \Company
         \end{tabularx}
     \end{table}
     
     \vskip1cm
     \begin{center}
         \textbf{\large บทคัดย่อ}
+    \end{center}
+    
+    #1
+}
+
+\newcommand{\makeengabstract}[1]{
+    %-- Abstract Page ------------------------------------------
+    \setcounter{page}{1}
+    \newpage
+    \addcontentsline{toc}{chapter}{บทคัดย่อ}
+    
+    \begin{table}[h]
+        \begin{tabularx}{\linewidth}{lX}
+            \textbf{Cooperative Title:}  \ThesisTiTleENG \\
+            \textbf{Student intern name:}  \AuNameENG \\
+            \textbf{Faculty:} Engineering \textbf{Department:} \DepartENG \\
+            \textbf{Advisor name:}  \AdvisorENG \\
+            \textbf{Mentor name:}  \MentorENG \\
+            \textbf{Company:}  \CompanyENG
+        \end{tabularx}
+    \end{table}
+    
+    \vskip1cm
+    \begin{center}
+        \textbf{\large ABSTRACT}
     \end{center}
     
     #1
