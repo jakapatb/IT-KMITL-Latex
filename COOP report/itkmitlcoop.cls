@@ -195,18 +195,16 @@
     \thispagestyle{empty}
     
     \begin{center}
-        \Large{\textbf{รายงานการปฏิบัติงานสหกิจศึกษา}} \\
-        \LARGE{\textbf{เรื่อง}} \\
-        \LARGE{\textbf{\ThesisTiTle}} \\
-        \LARGE{\textbf{\ThesisTiTleENG}} \vskip3cm
-        \Large{\textbf{ปฎิบัติงาน ณ \Company}} \vskip1cm
-        \Large{\textbf{โดย}} \vskip1cm
-        \Large{\textbf{\AuName}}  \\
-        \Large{\textbf{รหัสประจำตัว \SId}} \null \vfill
-        \large{\textbf{รายงานนี้เป็นส่วนหนึ่งของการศึกษารายวิชา สหกิจศึกษา \\
-                สาขาวิชาเทคโนโลยีสารสนเทศ คณะเทคโนโลยีสารสนเทศ \\
-                ภาคเรียนที่~\Sem \  ปีการศึกษา~\AcaY\\ 
-                สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง }}
+        \includegraphics{Logo_kmitl} \vskip1cm
+        \Large{\textbf{รายงานสหกิจศึกษาฉบับสมบูรณ์}} \vskip1cm
+        \LARGE{\textbf{\ThesisTiTle}} \vskip1cm
+        \LARGE{\textbf{\ThesisTiTleENG}} \vskip4cm
+        \Large{\textbf{\AuName}}  \vskip4cm
+        \large{\textbf{ภาควิชา \Depart \\
+                คณะวิศวกรรมศาสตร์\\
+                สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง\\
+                ปีการศึกษา~\AcaY\\ 
+                 }}
     \end{center}
 }
 
@@ -348,12 +346,12 @@
     
     \begin{table}[h]
         \begin{tabularx}{\linewidth}{lX}
-            \textbf{ชื่อโครงงานสหกิจศึกษา } \ThesisTiTle \\
-            \textbf{ชื่อ-สกุล นักศึกษา } \AuName \\
-            \textbf{คณะ } วิศวกรรมศาสตร์ \textbf{ภาควิชา} \Depart \\
-            \textbf{ชื่อ-สกุล อาจารย์นิเทศ } \Advisor \\
-            \textbf{ชื่อ-สกุล ผู้นิเทศงาน } \Mentor \\
-            \textbf{สถานประกอบการ } \Company
+            \textbf{ชื่อโครงงานสหกิจศึกษา} \ThesisTiTle \\
+            \textbf{ชื่อ-สกุล นักศึกษา} \AuName \\
+            \textbf{คณะ} วิศวกรรมศาสตร์ \textbf{ภาควิชา} \Depart \\
+            \textbf{ชื่อ-สกุล อาจารย์นิเทศ} \Advisor \\
+            \textbf{ชื่อ-สกุล ผู้นิเทศงาน} \Mentor \\
+            \textbf{สถานประกอบการ} \Company
         \end{tabularx}
     \end{table}
     
