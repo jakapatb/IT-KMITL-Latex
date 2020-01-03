@@ -4,7 +4,7 @@
 \usepackage{graphicx,amsmath,latexsym,amssymb,amsthm}
 \usepackage{indentfirst}
 \usepackage{cite}
-
+\usepackage{float}
 \graphicspath{ {images/} }
 
 \makeatletter
@@ -14,13 +14,15 @@
 \makeatother
 
 %1. Your thesis title (THAI)
-\newcommand{\ThesisTiTle}{ชื่อโปรเจ็ก}
+\newcommand{\ThesisTiTle}{ระบบบริหารทรัพยากรบุคคล : ManyFox}
 %2. Your thesis title (ENG)
-\newcommand{\ThesisTiTleENG}{Project name}
+\newcommand{\ThesisTiTleENG}{Awesome Human Resources Management : ManyFox}
 %3. Your name
-\newcommand{\AuName}{ชื่อ นามสกุล}
+% Your prefix
+\newcommand{\Gender}{นาย}
+\newcommand{\AuName}{จักรภัทร บุญโรจน์}
 %4. Your name ENG
-\newcommand{\AuNameENG}{Name Surname}
+\newcommand{\AuNameENG}{Jakkapat Boonroj}
 %5. Your student Department 
 \newcommand{\Depart}{วิศวกรรมสารสนเทศ}
 %5. Your student Department eng
@@ -28,31 +30,31 @@
 %5. Your student ID
 \newcommand{\SId}{รหัสประจำตัว}
 %6. Your advisor
-\newcommand{\Advisor}{ชื่อที่ปรึกษา}
+\newcommand{\Advisor}{ผศ.มยุรี เลิศเวชกุล}
 %6. Your advisor eng
-\newcommand{\AdvisorENG}{Mayuree}
+\newcommand{\AdvisorENG}{Asst.Prof. Mayuree Lertwatechakul}
 %6. Your Mentor
 \newcommand{\Mentor}{ผู้นิเทศงาน}
 %6. Your Mentor eng
-\newcommand{\MentorENG}{P'trust}
+\newcommand{\MentorENG}{Tanapruk Tangphianphan}
 %7. Your advisor employee
 \newcommand{\Exami}{ชื่อพนักงานที่ปรึกษา}
 %8. สถานประกอบการ
-\newcommand{\Company}{ชื่อบริษัท}
+\newcommand{\Company}{เน็กซี่เทคโนโลยี จำกัด}
 %8. สถานประกอบการ
-\newcommand{\CompanyENG}{Company}
+\newcommand{\CompanyENG}{Nextzy Technologies Co., Ltd}
 %9. ภาคเรียนที่ (in normal letters)
 \newcommand{\Sem}{1}
 %10. ปีการศึกษา (in normal letters)
 \newcommand{\AcaY}{2562}
 %11. ปีการศึกษา (in normal letters)
-\newcommand{\AcaYAD}{2018}
+\newcommand{\AcaYAD}{2019}
 %12. วันส่งรายงาน
-\newcommand{\SubD}{10 พฤศจิกายน พ.ศ. 2561}
+\newcommand{\SubD}{10 พฤศจิกายน พ.ศ. 2562}
 %13. วันเริ่มทำงาน
-\newcommand{\StartDWork}{23 กรกฎาคม พ.ศ. 2561}
+\newcommand{\StartDWork}{5 สิงหาคม พ.ศ. 2562}
 %14. วันสุดท้ายของการทำงาน
-\newcommand{\EndDWork}{30 พฤศจิกายน พ.ศ. 2561}
+\newcommand{\EndDWork}{28 พฤศจิกายน พ.ศ. 2562}
 %15. ที่อยู่สถานประกอบการ
 \newcommand{\Address}{ที่อยู่}
 %16. เว็บไซต์สถานประกอบการ
@@ -65,14 +67,23 @@
 \lhead{}\rhead{}\chead{}\lfoot{}\cfoot{\thepage}\rfoot{}
 \makecover
 \makethabstract{
-    บทคัดย่อ
+    บริษัท \Company เป็นบริษัท Software House ที่มีความต้องพัฒนา Digital Transformation สำหรับเว็บไซต์และแอพพิเคชั่น ในระบบปฎิบัติการ Android และ iOS 
+    โดยบริษัทต้องการพัฒนาระบบบริหารทรัพยากรบุคคลผ่าน Slack และ Website สำหรับใช้บริหารภายในองค์กร และเปิดให้เช่าบริการสำหรับองค์กรอื่น \\
+    \textbf{ManyFox} เป็น Web application ที่เชื่อมต่อกับ Slack สำหรับใช้ในการจัดการวันหยุดและการลางานของพนักงาน การเขียนบันทึกประจำวัน (Daily meeting) 
+    และ การจัดการข้อมูลของพนักงานภายในองค์กร โดยมีความสามารถเก็บข้อมูลและ นำเสนอข้อมลต่างๆผ่านทาง Slack รวมไปถึงการตั้งค่าของ บอทใน Slack ผ่านทาง Website
 }
 \makeengabstract{
-    ABSTRACT
+    
 }
 \makeack{
     \begin{enumerate}
-        \item คุณ ชื่อ สกุล \quad ตำแหน่ง xxxxxxx
+        \item นายสมเกียรติ กิจวงศ์วัฒนะ \quad ตำแหน่ง ผู้ประสานงานสหกิจศึกษา
+        \item พี่ทรัส \quad ตำแหน่ง Project Manager
+        \item นิชา \quad ตำแหน่ง Backend Developer Intern
+        \item พี่ออน \quad ตำแหน่ง UX/UI Designer
+        \item พี่บีม \quad ตำแหน่ง UX/UI Designer
+        \item พี่ตุ้ย \quad ตำแหน่ง Backend Developer
+
     \end{enumerate}
 }
 
