@@ -9,11 +9,12 @@
 
 \section{เทคโนโลยีและภาษาที่ใช้ในการพัฒนา}
 \subsection{HTML}
-HTML ย่อมาจาก Hypertext Markup Language  คือภาษาสากลในการสร้างหน้า Web page
+HTML ย่อมาจาก Hypertext Markup Language  คือภาษาสากลในการสร้างหน้า Web page โดยมีพื้นฐานมาจาก XML
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.35\linewidth]{html}
 	\caption{Hypertext Markup Language}
+	(ที่มา: https://www.hellomyweb.com/course/html/)
 	\label{Fig:HTML}
 \end{figure}
 \newpage
@@ -23,37 +24,47 @@ CSS ย่อมาจาก Cascading Style Sheets เป็นภาษาจ�
 	\centering
 	\includegraphics[width=0.25\linewidth]{css}
 	\caption{CSS}
+	(ที่มา: http://settawuttt.blogspot.com/2015/07/css-css-cascading-style-sheets-html-css.html)
 	\label{Fig:CSS}
 \end{figure}
 
+\subsection{SVG}
+SVG ย่อมาจาก Scalable Vector Graphics เป็นภาษามาร์กอัพสำหรับสร้างรูปภาพ Graphics 2 มิติที่มีรูปแบบ Vector
+เหมาะกับรูปภาพ ที่มีสีไม่มาก และมีโครงรูปที่มีรูปแบบ เช่น Icon Logo   
+โดยมีพื้นฐานมาจาก XML ทำให้สามารถ ย่อขยายรูป โดยที่ภาพไม่แตกได้ และสามารถเปลี่ยนสี หรือใส่ filter ได้ รวมถึงการใส่ Animation ได้ด้วย 
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.45\linewidth]{svg}
+	\caption{SVG}
+	(ที่มา: https://www.abeautifulsite.net/svg-has-a-logo)
+	\label{Fig:svg}
+\end{figure}
+
 \subsection{TypeScript}
-TypeScript เป็นภาษาสคริปที่มีพัฒนาต่อมาจากภาษา JavaScript ที่เพิ่ม Type System ที่สามารถกำหนดชนิดของตัวแปรได้
+TypeScript เป็นภาษาสคริปที่มีพัฒนาต่อมาจากภาษา JavaScript ที่เพิ่มความสามารถ Type System ที่สามารถกำหนดชนิดของตัวแปรได้
 เพิ่มความสามารถในการเขียนโปรแกรมเชิงวัตถุ (Object Oriented Programming:OOP) ซึ่งจะทำให้การพัฒนาดเป็นได้ง่ายขึ้น
-โดยภาษา TypeScript เป็น transpiler ที่แปลงโค้ดกลับไปเป็น JavaScript ทำให้สามารถทำงานร่วมกับภาษา JavaScriptได้
+โดยภาษา TypeScript เป็น transpiler ที่แปลงโค้ดกลับไปเป็น JavaScript ทำให้สามารถทำงานร่วมกับภาษา JavaScript ได้
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{ts}
 	\caption{TypeScript}
+	(ที่มา: 
+	https://www.robertcooper.me/get-started-with-typescript-in-2019
+	)
+	
 	\label{Fig:TypeScript}
-\end{figure}
-
-\subsection{React TypeScript}
-React ถูกสร้างขึ้นโดย Facebook เป็น JavaScript library สำหรับสร้าง User interface และมี libraries ที่ช่วยจัดการด้านต่างๆมากมาย ซึ่งทำให้การพัฒนาเว็บไซต์เป็นไปง่ายขึ้น
-และเขียนในรูปแบบ SPA (Single Page Application) และเป็น Client Side Rendering
-โดยปกติ React จะติดตั้งค่าเริ่มต้นด้วยภาษา JavaScript จึงต้องเปลี่ยนตั้งค่าเป็น TypeScript เพื่อทำให้การพัฒนาง่ายขึ้น
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\linewidth]{react}
-	\caption{React TypeScript}
-	\label{Fig:react}
 \end{figure}
 
 \subsection{GraphQL}
 GraphQL ถูกสร้างขึ้นโดย Facebook เป็น Query language หรือ ภาษาที่ใช้ในการสืบค้นข้อมูลจาก API เหมือนเป็นตัวกลางที่ใช้ในการจัดการข้อมูลต่างๆ โดยจะ Response กลับมาเป็น JSON สามารถเลือกรับเฉพาะข้อมูลที่ต้องการได้ เพื่อลดปริมาณ Data ในการรับส่งข้อมูล และสามารถเรียกข้อมูลจากหลาย resource จาก request เดียวได้
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{graphql}
+	\includegraphics[width=0.8\linewidth]{graphql}
 	\caption{GraphQL}
+	(ที่มา: 
+	https://www.section.io/blog/caching-distributed-graphql-at-the-edge/
+	)
 	\label{Fig:graphql}
 \end{figure}
 
@@ -64,14 +75,46 @@ Visual Studio Code: VS Code เป็นโปรแกรม source code editor
 	\centering
 	\includegraphics[width=0.20\linewidth]{vscode}
 	\caption{Visual Studio Code}
+	(ที่มา: 
+	https://twitter.com/code?lang=el
+	)
 	\label{Fig:vscode}
 \end{figure}
+\subsection{NodeJS}
+NodeJS เป็น Open source Platform JavaScript runtime ทำให้สามารถเขียน JavaScript บนฝั่ง Server ได้
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{nodejs}
+	\caption{NodeJS}
+	(ที่มา: 
+	https://www.blognone.com/node/112722/
+	)
+	\label{Fig:nodejs}
+\end{figure}
+\subsection{NPM (Node Package Manager)}
+NPM เป็น Command line ใน Terminal สำหรับการ Install uninstall และ update Libraries ที่มีอยู่ใน NodeJS ผ่าน Command line โดยเมื่อInstall uninstall หรือ update
+จะนำ ชื่อ และ version ของ libraries ไปเก็บไว้ใน ไฟล์ package.json และจะเก็บไฟล์ของ Libraries ไว้ใน node\_modules
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{npm}
+	\caption{NPM}
+	(ที่มา: 
+	https://commons.wikimedia.org/wiki/File:Npm-logo.svg
+	)
+	\label{Fig:npm}
+\end{figure}
+\subsection{NVM (Node Version Mangaer)}
+NVM เป็น  Command line ใน Terminal สำหรับการจัดการ Version ของ NodeJS สามารถลงได้หลาย Version และสลับเปลี่ยนได้ตาม Command line
+เนื่องจากบางครั้ง libraries หรือ Framework บางตัวไม่รองรับ Version ใหม่จึงจำเป็นต้องสลับเป็น Version ที่รองรับ 
 \subsection{Git}
 Git เป็น version control ที่เป็นระบบที่ใช้จัดเก็บติดตาม และควบคุมการเปลี่ยนแปลงที่เกิดขึ้นกับไฟล์ชนิดใดก็ตาม ช่วยให้การพัฒนางานในทีมเป็นไปอย่างมีระบบ คนในทีมสามารถใช้โค้ดที่เป็นเวอร์ชั่นล่าสุดตลอดเวลา หรือสามารถแก้ไขและแยกสายการพัฒนา (Branch) ออกมาได้
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.4\linewidth]{git}
 	\caption{Git}
+	(ที่มา: 
+	http://blog.davidecoppola.com/2016/11/10-free-resources-to-learn-how-to-use-git/
+	)
 	\label{Fig:git}
 \end{figure}
 \subsection{Cloud Build}
@@ -80,8 +123,11 @@ Cloud Build คือบริการของ Google ที่ช่วย Bu
 Firebase ถูกสร้างขึ้นโดย Google เป็น Platform ที่มีบริการเครื่องมือช่วยเหลือ การพัฒนาแอปพลิเคชัน ในรูปแบบ Serverless โดยมีทั้งแบบใช้ฟรีและ เสียเงินตามที่ใช้ โดยในโปรเจคนี้ได้ใช้บริการเครื่องมือของ Firebase ได้แก่ Cloud Firestore
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{firebase}
+	\includegraphics[width=0.7\linewidth]{firebase}
 	\caption{Firebase}
+	(ที่มา: 
+	https://dev.wi.th/community/firebasethailand
+	)
 	\label{Fig:firebase}
 \end{figure}
 \subsubsection{Cloud Firestore}
@@ -96,17 +142,37 @@ Google analytics ถูกสร้างโดย Google เป็นเคร�
 	\centering
 	\includegraphics[width=0.7\linewidth]{google-analytics}
 	\caption{Gatsby}
+	(ที่มา: 
+	https://nerdoptimize.com/google-analytics-introduction/
+	)
 	\label{Fig:gatsby}
 \end{figure}
 
+\subsection{React TypeScript}
+React ถูกสร้างขึ้นโดย Facebook เป็น JavaScript library สำหรับสร้าง User interface และมี libraries ที่ช่วยจัดการด้านต่างๆมากมาย ซึ่งทำให้การพัฒนาเว็บไซต์เป็นไปง่ายขึ้น
+และเขียนในรูปแบบ SPA (Single Page Application) และเป็น Client Side Rendering
+โดยปกติ React จะติดตั้งค่าเริ่มต้นด้วยภาษา JavaScript จึงต้องเปลี่ยนตั้งค่าเป็น TypeScript เพื่อทำให้การพัฒนาง่ายขึ้น
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{react}
+	\caption{React TypeScript}
+	(ที่มา: 
+	https://www.carlrippon.com/why-typescript-with-react/
+	)
+	\label{Fig:react}
+\end{figure}
+\newpage
 \subsection{Gatsby}
 Gatsby เป็น Open source Framework โดยมีพื้นฐานมาจาก React โดยสามารถทำ SSR (Server Side Rendering)
 ได้ทำให้การรองรับ SEO และถูก Google search มองเห็นมากขึ้น
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{gatsby}
+	\includegraphics[width=0.65\linewidth]{gatsby}
 	\caption{Gatsby}
+	(ที่มา: 
+	https://www.gatsbyjs.org/
+	)
 	\label{Fig:gatsby}
 \end{figure}
 
@@ -115,8 +181,11 @@ Ant Design เป็น Open source UI Framework ในการสร้าง 
 ก่อตั้งและพัฒนาภายในประเทศจีน รองรับทั้ง React, Angular และ Vue ที่เป็น Web Framework สำหรับการพัฒนาเว็บไซต์
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{ant-design}
+	\includegraphics[width=0.5\linewidth]{ant-design}
 	\caption{Ant Design}
+	(ที่มา: 
+	https://ant.design/
+	)
 	\label{Fig:ant-design}
 \end{figure}
 \subsection{Apollo}
@@ -125,23 +194,107 @@ Apollo เป็น Open source Platform สำหรับพัฒนา APIs 
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{apollo}
+	\includegraphics[width=0.6\linewidth]{apollo}
 	\caption{Apollo}
+	(ที่มา: 
+	https://sdtimes.com/meteor-introduces-apollo-graphql/
+	)
 	\label{Fig:apollo}
 \end{figure}
-\subsubsection{Appollo Client (React)}
-
-\subsubsection{Apollo Server}
 
 \subsection{Formik}
-เขียนดีไหมวะ
+Formik เป็น React library ในการจัดการด้าน Form โดยสามารถจัดการ value เข้าและออก ภายใน state และสามารถจัดการ Validate ข้อมูลก่อน Submit และแสดง Error messageได้
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.2\linewidth]{formik}
+	\caption{Formik}
+	(ที่มา: 
+	https://dribbble.com/shots/4004586-Formik
+	)
+	\label{Fig:formik}
+\end{figure}
 
 
+\subsection{DAY.JS}
+DAY.JS เป็น library สำหรับจัดการแหละแสดงผลวันเดือนปีและเวลา โดยมีขนาดไฟล์เล็กเมื่อถูก gzip บีบอัดจะเหลือเพียง 2kb
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{dayjs}
+	\caption{dayjs}
+	(ที่มา: 
+	https://github.com/iamkun/dayjs
+	)
+	\label{Fig:dayjs}
+\end{figure}
+
+\subsection{Styled-components}
+Styled-components เป็น React library สำหรับสร้าง HTML tag ที่มี style ตามที่ประกาศไว้ ให้มีชื่อตามที่กำหนดได้ 
+(โดยจำเป็นต้องขึ้นด้วยภาษาอังกฤษพิมพ์ใหญ่เท่านั้น) โดยเมื่อ Build จะแปลง Style เป็น className ใน CSS 
+แสดง HTML tag ที่กำหนด ที่มี attribute className ทำประกาศไว้  
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.2\linewidth]{styled-components}
+	\caption{styled-components}
+	(ที่มา: 
+	https://www.styled-components.com/
+	)
+	\label{Fig:styled-components}
+\end{figure}
+
+
+
+\subsection{Draftjs}
+Draftjs เป็น Rich Text Editor Framework ใช้เฉพาะบน React สร้างโดย Facebook 
+สามารถบันทึกข้อความโดยปรับเปลี่ยนขนาดตัวอักษร ตัวหนา ตัวเอียง และขีดเส้นใต้ เป็นต้น 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.2\linewidth]{draftjs}
+	\caption{draftjs}
+	(ที่มา: 
+	https://twitter.com/draft\_js
+	)
+	\label{Fig:draftjs}
+\end{figure}
+\subsection{Lodash}
+Lodash เป็น JavaScript library ในการจัดการหรือคัดกรองข้อมูลในรูปแบบ Object หรือ Array ให้ออกในรูปแบบที่ต้องการได้
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.2\linewidth]{lodash}
+	\caption{lodash}
+	(ที่มา: 
+	https://en.wikipedia.org/wiki/Lodash
+	)
+	\label{Fig:lodash}
+\end{figure}
+\subsection{Slack Web API}
+Slack Web API ทำหน้าที่ร้องขอข้อมูลจาก Database ของ Workspace ใน Slack โดยมี Method กว่า 130 Method ให้เรียกใช้งาน
+\\
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{slack-api}
+	\caption{slack-api}
+	(ที่มา: 
+	https://apievangelist.com/2019/10/31/a-diverse-api-json-index-example-for-slack/
+	)
+	\label{Fig:slack-api}
+\end{figure}
+\subsection{Nodemon}
+Nodemon เป็นเครื่องมือที่ช่วยให้การพัฒนาฝั่ง Serever ง่ายขึ้น โดยเมื่อมีการเซฟไฟล์ที่อยู่ในโปรเจค จะทำการRestart Server ใหม่ทันที
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.2\linewidth]{nodemon}
+	\caption{nodemon}
+	(ที่มา: 
+	https://intelligentbee.com/tag/nodejs/
+	)
+	\label{Fig:nodemon}
+\end{figure}
 \section{ลักษณะขั้นตอนการทำงาน}
 \subsection{Sprint planning}
 ทีมจะมีประชุมวางแผนในการจัดสรรงาน (Task) ตาม Sprint backlog ที่ส่วนนี้ทาง System Analyst ได้กำหนดขึ้นมาก่อนแล้ว เมื่อแบ่งงานเสร็จจะมีการประเมินเวลาในการทำงานให้เหมาะสม โดยงานและการประเมินเวลาของแต่ละงาน จะมีการบันทึกลงใน Sprint task board ของ Taiga ซึ่งเป็น Project management tools ที่ทำให้ทุกคนในที่มสามารถติดตามกิจกรรมต่างๆได้ตามรูปที่ \ref{Fig:taiga}
 \subsection{Gitflow}
-เป็นการใช้ \textbf{Git} ที่เป็นเครื่องมือจัดการ Code collaboration และ Version control โดยแยก Branch เป็น Master Develop และ Feature โดยทีมเลือกใช้บริการ Git ของ \textbf{Bitbucket}
+เป็นการใช้ Git ที่เป็นเครื่องมือจัดการ Code collaboration และ Version control โดยแยก Branch เป็น Master Develop และ Feature โดยทีมเลือกใช้บริการ Git ของ Bitbucket
 
 \textbf{Master Branch}\\
 เป็น Branch ของ code Production จะเป็นตัวที่ทำการ test และแก้ไขมาเรียบร้อยแล้ว

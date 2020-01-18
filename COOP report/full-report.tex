@@ -5,8 +5,10 @@
 \usepackage{indentfirst}
 \usepackage{cite}
 \usepackage{float}
-\graphicspath{ {images/} }
 
+\usepackage[labelsep=space]{caption}
+\graphicspath{ {images/} }
+\setlength{\parindent}{2em}
 \makeatletter
 % \patchcmd{<cmd>}{<search>}{<replace>}{<succes>}{<failure>}
 \patchcmd{\@chapter}{\addtocontents{lof}{\protect\addvspace{10\p@}}}{}{}{}% LoF
@@ -34,7 +36,7 @@
 %6. Your advisor eng
 \newcommand{\AdvisorENG}{Asst.Prof. Mayuree Lertwatechakul}
 %6. Your Mentor
-\newcommand{\Mentor}{ผู้นิเทศงาน}
+\newcommand{\Mentor}{นายธนพฤกษ์ ตั้งเพียรพันธ์}
 %6. Your Mentor eng
 \newcommand{\MentorENG}{Tanapruk Tangphianphan}
 %7. Your advisor employee
@@ -67,22 +69,22 @@
 \lhead{}\rhead{}\chead{}\lfoot{}\cfoot{\thepage}\rfoot{}
 \makecover
 \makethabstract{
-    บริษัท \Company เป็นบริษัท Software House ที่มีความต้องพัฒนา Digital Transformation สำหรับเว็บไซต์และแอพพิเคชั่น ในระบบปฎิบัติการ Android และ iOS 
+    บริษัท \Company เป็นบริษัท Software House ที่มีความต้องพัฒนา Digital Transformation สำหรับเว็บไซต์และแอพพิเคชั่น ในระบบปฎิบัติการ Android และ iOS
     โดยบริษัทต้องการพัฒนาระบบบริหารทรัพยากรบุคคลผ่าน Slack และ Website สำหรับใช้บริหารภายในองค์กร และเปิดให้เช่าบริการสำหรับองค์กรอื่น \\
-    \textbf{ManyFox} เป็น Web application ที่เชื่อมต่อกับ Slack สำหรับใช้ในการจัดการวันหยุดและการลางานของพนักงาน การเขียนบันทึกประจำวัน (Daily meeting) 
+    \textbf{ManyFox} เป็น Web application ที่เชื่อมต่อกับ Slack สำหรับใช้ในการจัดการวันหยุดและการลางานของพนักงาน การเขียนบันทึกประจำวัน (Daily meeting)
     และ การจัดการข้อมูลของพนักงานภายในองค์กร โดยมีความสามารถเก็บข้อมูลและ นำเสนอข้อมลต่างๆผ่านทาง Slack รวมไปถึงการตั้งค่าของ บอทใน Slack ผ่านทาง Website
 }
 \makeengabstract{
-    
+    \CompanyENG are Software House 
 }
 \makeack{
     \begin{enumerate}
         \item นายสมเกียรติ กิจวงศ์วัฒนะ \quad ตำแหน่ง ผู้ประสานงานสหกิจศึกษา
-        \item พี่ทรัส \quad ตำแหน่ง Project Manager
-        \item นิชา \quad ตำแหน่ง Backend Developer Intern
-        \item พี่ออน \quad ตำแหน่ง UX/UI Designer
-        \item พี่บีม \quad ตำแหน่ง UX/UI Designer
-        \item พี่ตุ้ย \quad ตำแหน่ง Backend Developer
+        \item นายธนพฤกษ์ ตั้งเพียรพันธ์ \quad ตำแหน่ง Project Manager
+        \item นางสาวณิชา โรจน์ศรีกุล \quad ตำแหน่ง Backend Developer Intern
+        \item นางสาวสุมณฑา เจริญเผ่า \quad ตำแหน่ง UX/UI Designer
+        \item นายกฤษฎิพงศ์ ประยูรวงศ์เกษม \quad ตำแหน่ง UX/UI Designer
+        \item นายจารุวิทย์ โนดไธสง \quad ตำแหน่ง Backend Developer
 
     \end{enumerate}
 }
@@ -106,7 +108,7 @@
 \restoregeometry
 
 \mainmatter
-\lhead{}\rhead{\thepage}\chead{}\lfoot{}\cfoot{}\rfoot{}
+\lhead{}\rhead{}\chead{}\lfoot{}\cfoot{\thepage}\rfoot{}
 
 \include{chapter1}
 \include{chapter2}
@@ -115,11 +117,14 @@
 \include{chapter5}
 
 \clearpage
+
+
+\startappendix
+
+\include{appendix}
+
 \addcontentsline{toc}{chapter}{บรรณานุกรม}
 \bibliographystyle{IEEEtran}
 \bibliography{reference}
-
-\startappendix
-\include{appendix}
-
+\include{reference}
 \end{document}

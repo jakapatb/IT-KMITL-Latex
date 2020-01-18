@@ -25,21 +25,21 @@
 % ##### Font and Typing
 \XeTeXlinebreaklocale "th_TH" %สำหรับตัดคำ
 \XeTeXlinebreakskip = 0pt plus 1pt
-\setmainfont[Scale=1]{Sarabun}
+\setmainfont[Scale=1.3]{TH Sarabun New}
 \linespread{1.3}
 
 % ##### Set Chapter and Section Style
 \titleformat{\chapter}[display]
-{\normalfont\Large\bfseries\centering}
-{\chaptertitlename\ \thechapter}{0pt}{\LARGE}
+{\normalfont\large\bfseries\centering}
+{\chaptertitlename\ \thechapter}{0pt}{\large}
 \titlespacing*{\chapter}{0pt}{-2\baselineskip}{2em}
 
 \titleformat{\section}
-{\normalfont\large\bfseries}{\thesection}{0.5em}{}
+{\normalfont\bfseries}{\thesection}{0.5em}{}
 
 \titleformat{\subsection}
 {\normalfont\bfseries}{\thesubsection}{0.5em}{}
-\titlespacing*{\subsection}{0pt}{1em}{0.25em}
+\titlespacing*{\subsection}{\parindent}{1em}{0.25em}
 
 % ##### Re-define word
 \renewcommand{\bibname}{บรรณานุกรม}
